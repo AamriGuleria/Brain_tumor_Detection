@@ -2,4 +2,3 @@ Flask
 tensorflow
 Pillow
 numpy
-pip freeze > requirements.txt
