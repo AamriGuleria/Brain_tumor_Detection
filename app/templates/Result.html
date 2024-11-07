@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="main">
+    <div class="navbar">
+        <a href="/"><img src="../static/home2.jpg" height="70px" width="70px" alt="Home"/></a>
+        <p color="orange">BT-DETECT</p>
+    </div>
+    <center>
+    <div class="upload-container2">
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+        <img src="{{ image_url }}" alt="Uploaded Image" width="300">
+        {% else %}
+        <h2>No prediction available.</h2>
+        <p>Please upload an image to get a prediction.</p>
+    {% endif %}
+    </div>
+    </center>
+    </div>
+</body>
+</html>

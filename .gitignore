@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+app/model/brain_tumor_detection_model.h5

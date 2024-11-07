@@ -1,0 +1,126 @@
+body{
+    margin:0;
+    background-color: black;
+}
+.upload-container h1{
+    margin-bottom:5%;
+    font-family: monospace;
+    font-size:40px;
+    background-color: #1e1e1ebe; 
+    color: #fff;
+    margin-top: 70px;
+
+}
+.upload-container input{
+    font-size: large;
+    padding: 6px;
+    border:none;
+}
+input[type="submit"]{
+    font-size: large;
+    padding: 6px;
+    border:none;
+    background-color: rgba(0, 255, 255, 0.715);
+}
+
+input[type="submit"]:hover{
+    background-color: rgba(0, 255, 255, 0.439);
+}
+.upload-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    margin:5%;
+    font-family: monospace;
+    font-stretch:extra-expanded;
+    font-size: 100%;
+    max-width:500px;
+    padding: 1%;
+}
+.Home-main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../Main-Back.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+.Home-main .Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    transform: translateY(100%);
+    margin:5%;
+    font-family: monospace;
+    font-stretch:extra-expanded;
+    font-size: 100%;
+    max-width:500px;
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.Home p{
+    font-family: monospace;
+    color:gray;
+    font-size: larger;
+}
+.Home a:hover{
+    transform: scale(125%);
+}
+.navbar p{
+    font-family: monospace;
+    font-style: oblique;
+    color:rgb(107, 107, 245);
+    font-weight: 900;
+}
+.navbar a{
+    margin-top:1%;
+    margin-bottom:1%;
+    margin-left:0.5%;
+    margin-right: 0.5%;
+}
+.upload-container2 h2{
+    font-size: 40px;
+    background-color: gray;
+    font-family: monospace;
+}
+.upload-container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    margin:5%;
+    font-family: monospace;
+    font-stretch:extra-expanded;
+    font-size: 100%;
+    max-width:500px;
+    padding: 1%;
+}
+.main{
+    background-image: url("../predict-back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.navbar img{
+    border-radius: 50%;
+}
+.navbar{
+    font-size:30px;
+    font-family: monospace;
+    position:fixed;
+    width:100%;
+    background-color: black;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    box-shadow:  2px 4px rgba(0, 0, 255, 0.26);
+}

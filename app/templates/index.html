@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Tumor Detection</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/"><img src="../static/home2.jpg" height="70px" width="70px" alt="Home"/></a>
+        <p >BT-DETECT</p>
+    </div>
+    <div class="main">
+    <center>
+    <div class="upload-container">
+    <h1>UPLOAD IMAGE IN PNG JPG OR JPEG FORMAT</h1>
+    <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+        <input class="img-input" type="file" name="file" accept=".png, .jpg, .jpeg" required>
+        <input type="submit" value="Upload">
+    </form>
+    </div>
+    </center>
+    </div>
+</body>
+</html>
