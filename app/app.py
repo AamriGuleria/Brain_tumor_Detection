@@ -5,8 +5,11 @@ from tensorflow.keras.models import load_model
 import os
 
 app = Flask(__name__)
-model = load_model('../models/Brain_Tumor_Detection_Kaggle_Dataset_Final.h5')
-
+# C:\Users\asus\Desktop\Brain_Tumor_Detection\app\app.py
+# C:\Users\asus\Desktop\Brain_Tumor_Detection\models\Brain_Tumor_Detection_Kaggle_Dataset_Final.h5
+# model = load_model('../models/Brain_Tumor_Detection_Kaggle_Dataset_Final.h5')
+model_path = os.path.join(os.path.dirname(__file__), '../models/Brain_Tumor_Detection_Kaggle_Dataset_Final.h5')
+model=load_model(model_path)
 @app.route('/')
 def index():
     return render_template('home.html')
